@@ -5,7 +5,10 @@ import "./base64.sol";
 
 contract JointGuaranteeNFT is ERC721URIStorage {
 
+    // legal specialist address.
     // address councilDAOMember = 0x0BBE4d6117BB628798BCbec02c1bbbDCd6d5449f; //TBD : this should be list in the future.
+
+    //developper address
     address councilDAOMember = 0x06baa3B6517bE5bcA66a27c9f9e6aA1dD674Eba2; //TBD : this should be list in the future.
     mapping(uint => bool ) councilVotingStatus; //TBD: need to be multi vote.
     uint nftid = 1;
@@ -44,6 +47,10 @@ contract JointGuaranteeNFT is ERC721URIStorage {
         _mint(msg.sender , nftid);
         _setTokenURI(nftid,tokenURIMessage); //TBD: need to set variable image.
         nftid++;
+    }
+
+    function checkTokenGraphScore(address user) public view returns (uint) {
+        return 80;
     }
 
     function getCompensantionValue(uint nftid) public pure returns (string memory){
