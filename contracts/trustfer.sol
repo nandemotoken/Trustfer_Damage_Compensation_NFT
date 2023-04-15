@@ -3,13 +3,14 @@ pragma solidity 0.8.10;
 import "./OpenZeppelinERC721.sol";
 import "./base64.sol";
 
-contract JointGuaranteeNFT is ERC721URIStorage {
+contract Trustfer_Damage_Compensation_NFT is ERC721URIStorage {
 
     // legal specialist address.
     address councilDAOMember = 0x0BBE4d6117BB628798BCbec02c1bbbDCd6d5449f; //TBD : this should be list in the future.
 
     //developper address
     //address councilDAOMember = 0x06baa3B6517bE5bcA66a27c9f9e6aA1dD674Eba2; //TBD : this should be list in the future.
+
     mapping(uint => bool ) councilVotingStatus; //TBD: need to be multi vote.
     uint nftid = 1;
     
@@ -43,7 +44,8 @@ contract JointGuaranteeNFT is ERC721URIStorage {
     }
 
     function newCompensationNFT() public payable {
-        require(msg.value == 1 ether);
+        require(msg.value == 1 ether , "invalit eth price");
+        require(checkTokenGraphScore(msg.sender) > 50 , "token graph score is too low");
         _mint(msg.sender , nftid);
         _setTokenURI(nftid,tokenURIMessage); //TBD: need to set variable image.
         nftid++;
