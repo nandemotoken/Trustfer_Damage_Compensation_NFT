@@ -1,10 +1,10 @@
-README.md
+Trustfer Damage Compensation NFT
 =========
 
 Overview
 --------
 
-JointGuaranteeNFT is a smart contract designed for rent guarantee companies. This contract evaluates whether the guarantor is capable of paying the damage compensation and provides rent guarantees by issuing a Non-Fungible Token (NFT) to the guarantor.
+Trustfer is a smart contract designed for rent guarantee companies. This contract evaluates whether the guarantor is capable of paying the damage compensation and provides rent guarantees by issuing a Non-Fungible Token (NFT) to the guarantor.
 
 Features
 --------
@@ -72,4 +72,4 @@ Additional Considerations
 Disclaimer
 ----------
 
-This README provides general guidance on how to use the JointGuaranteeNFT smart contract. It is important to conduct a thorough audit and testing of the contract before deploying it on the mainnet. The provided information is not exhaustive, and it is the user's responsibility to ensure that the smart contract meets their specific requirements.
+This README provides general guidance on how to use the Trustfer smart contract. It is important to conduct a thorough audit and testing of the contract before deploying it on the mainnet. The provided information is not exhaustive, and it is the user's responsibility to ensure that the smart contract meets their specific requirements.
