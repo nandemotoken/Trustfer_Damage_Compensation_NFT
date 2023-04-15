@@ -71,5 +71,4 @@ Additional Considerations
 
 Disclaimer
 ----------
-
-This README provides general guidance on how to use the Trustfer smart contract. It is important to conduct a thorough audit and testing of the contract before deploying it on the mainnet. The provided information is not exhaustive, and it is the user's responsibility to ensure that the smart contract meets their specific requirements.
+This product is a prototype that was created in one day for ETH Global Tokyo, so we do not recommend that you put this contract into practice as is.
